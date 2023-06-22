@@ -80,7 +80,7 @@ macro(tinyChat_setup_options)
 
   tinyChat_check_libfuzzer_support(LIBFUZZER_SUPPORTED)
   if(LIBFUZZER_SUPPORTED AND (tinyChat_ENABLE_SANITIZER_ADDRESS OR tinyChat_ENABLE_SANITIZER_THREAD OR tinyChat_ENABLE_SANITIZER_UNDEFINED))
-    set(DEFAULT_FUZZER ON)
+    set(DEFAULT_FUZZER OFF)
   else()
     set(DEFAULT_FUZZER OFF)
   endif()

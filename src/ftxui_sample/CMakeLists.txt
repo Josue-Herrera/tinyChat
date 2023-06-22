@@ -14,6 +14,9 @@ target_link_system_libraries(
           lefticus::tools
           ftxui::screen
           ftxui::dom
-          ftxui::component)
+          ftxui::component
+          range-v3::range-v3
+          asio::asio
+          json::json)
 
 target_include_directories(intro PRIVATE "${CMAKE_BINARY_DIR}/configured_files/include")
